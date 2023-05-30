@@ -1,15 +1,15 @@
 let imagesScr = [
-    '../img/Bitmap.png',
-    '../img/Bitmap_1.png',
-    '../img/Bitmap_2.png',
-    '../img/Bitmap_3.png',
-    '../img/Bitmap_4.png',
-    '../img/Bitmap_5.png',
-    '../img/Bitmap_6.png',
-    '../img/Bitmap_7.png',
-    '../img/Bitmap_1.png',
-    '../img/Bitmap_2.png',
-    '../img/Bitmap_3.png'
+    '/img/Bitmap.png',
+    '/img/Bitmap_1.png',
+    '/img/Bitmap_2.png',
+    '/img/Bitmap_3.png',
+    '/img/Bitmap_4.png',
+    '/img/Bitmap_5.png',
+    '/img/Bitmap_6.png',
+    '/img/Bitmap_7.png',
+    '/img/Bitmap_1.png',
+    '/img/Bitmap_2.png',
+    '/img/Bitmap_3.png'
 ]
 
 let brandLogo = document.querySelector('.brand__logo');
