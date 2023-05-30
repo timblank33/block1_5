@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "TT Lakes Bold";
+    src: url("../fonts/TTLakes-Bold.ttf");
+}
+@font-face {
+    font-family: "TT Lakes Regular";
+    src: url("../fonts/TTLakes-Regular.ttf");
+}
+@font-face {
+    font-family: "TT Lakes Medium";
+    src: url("../fonts/TTLakes-Medium.ttf");
+}
+
+.brand__title {
+    font-family: "TT Lakes Regular";
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 80px;
+    background-color: #fff;
+}
+.brand__block {
+    background-color: #F2F2F2;
+    padding: 24px 16px;
+    padding-right: 0;
+}
+.brand__logo {
+    display: flex;
+}
+.brand__logo-block {
+    background-color: #fff;
+    height: 72px;
+    margin-right: 16px;
+    border-radius: 6px;
+    display: flex;
+    flex: 0 0 240px;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand__logo-block-img {
+    margin-left: 16px;
+}
+.brand__logo-block-arrow {
+    margin-right: 16px;
+}
+.brand__logo-block:last-child {
+    margin-right: 0;
+}
+.brand__more-mobile--display--none {
+    display: none;
+}
