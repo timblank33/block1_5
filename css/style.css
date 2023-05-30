@@ -52,3 +52,8 @@
 .brand__more-mobile--display--none {
     display: none;
 }
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
