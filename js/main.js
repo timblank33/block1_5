@@ -44,22 +44,42 @@ document.addEventListener('resize',(e) => {
  
 });
 
-brandMore.addEventListener('click', () => {
-    if (brandLogo.style.maxHeight != '340px' && window.innerWidth < 1016){
-        brandLogo.style.maxHeight = '340px';
+// brandMore.addEventListener('click', () => {
+//     if (brandLogo.style.maxHeight != '336px' && window.innerWidth < 1016){
+//         brandLogo.style.maxHeight = '336px';
+//         brandMoreImg.style.transform = 'rotateX(180deg)'
+//         brandMoreText.textContent = 'Скрыть все';
+//     } else if (brandLogo.style.maxHeight != '248px' && window.innerWidth >= 1016){
+//         brandLogo.style.maxHeight = '248px';
+//         brandMoreImg.style.transform = 'rotateX(180deg)'
+//         brandMoreText.textContent = 'Скрыть все';
+//     } else {
+//         brandLogo.style.maxHeight = '160px';
+//         brandMoreText.textContent = 'Показать все';
+//         brandMoreImg.style.transform = 'rotateX(0deg)';
+//     }
+// });
+
+
+brandLogo.style.maxHeight = "160px";
+brandMore.addEventListener("click", () => {
+    if (brandLogo.style.maxHeight === "160px") {
+        brandLogo.style.maxHeight = `${ brandLogo.scrollHeight }px`;
         brandMoreImg.style.transform = 'rotateX(180deg)'
         brandMoreText.textContent = 'Скрыть все';
-    } else if (brandLogo.style.maxHeight != '248px' && window.innerWidth >= 1016){
-        brandLogo.style.maxHeight = '248px';
-        brandMoreImg.style.transform = 'rotateX(180deg)'
-        brandMoreText.textContent = 'Скрыть все';
+        
     } else {
-        brandLogo.style.maxHeight = '160px';
+        brandLogo.style.maxHeight = "160px";
         brandMoreText.textContent = 'Показать все';
         brandMoreImg.style.transform = 'rotateX(0deg)';
     }
-    console.log(brandLogo.style.maxHeight)
 });
+brandLogo.addEventListener("transitionend", () => {
+    if (brandLogo.style.maxHeight !== "160px") {
+        brandLogo.style.maxHeight = `${ brandLogo.scrollHeight }px`;
+    }
+});
+
 
 let brandSwiperWindow = document.querySelector('.brand__swiper-window');
     
