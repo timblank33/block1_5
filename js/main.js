@@ -39,10 +39,18 @@ let brandMore = document.querySelector('.brand__more');
 let brandMoreImg = document.querySelector('.brand__more-img');
 let brandMoreText = document.querySelector('.brand__more-text');
 
+document.addEventListener('resize',(e) => {
+    console.log(document.body.clientWidth);
+ 
+});
+
 brandMore.addEventListener('click', () => {
-    brandMoreImg.style.transition = 'transform .3s';
-    if (brandLogo.style.maxHeight != '500px'){
-        brandLogo.style.maxHeight = '500px';
+    if (brandLogo.style.maxHeight != '340px' && window.innerWidth < 1016){
+        brandLogo.style.maxHeight = '340px';
+        brandMoreImg.style.transform = 'rotateX(180deg)'
+        brandMoreText.textContent = 'Скрыть все';
+    } else if (brandLogo.style.maxHeight != '248px' && window.innerWidth >= 1016){
+        brandLogo.style.maxHeight = '248px';
         brandMoreImg.style.transform = 'rotateX(180deg)'
         brandMoreText.textContent = 'Скрыть все';
     } else {
@@ -50,6 +58,7 @@ brandMore.addEventListener('click', () => {
         brandMoreText.textContent = 'Показать все';
         brandMoreImg.style.transform = 'rotateX(0deg)';
     }
+    console.log(brandLogo.style.maxHeight)
 });
 
 let brandSwiperWindow = document.querySelector('.brand__swiper-window');
