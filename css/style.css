@@ -10,7 +10,9 @@
     font-family: "TT Lakes Medium";
     src: url("../fonts/TTLakes-Medium.ttf");
 }
-
+.brand {
+    overflow: hidden;
+}
 .brand__title {
     font-family: "TT Lakes Regular";
     text-transform: uppercase;
@@ -23,9 +25,11 @@
     background-color: #fff;
 }
 .brand__block {
+    position: relative;
     background-color: #F2F2F2;
-    padding: 24px 16px;
+    padding: 16px;
     padding-right: 0;
+    padding-bottom: 50px;
 }
 .brand__logo {
     display: flex;
@@ -52,8 +56,25 @@
 .brand__more-mobile--display--none {
     display: none;
 }
-
+.brand__block-gradient--display {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 24px;
+    height: 72px;
+    background: linear-gradient(to right, transparent 40%, #fff 90%);
+    z-index: 1;
+}
 .swiper {
-    width: 600px;
-    height: 300px;
-  }
+    max-width: 256px;
+    overflow: visible;
+    margin: 0;
+}
+.swiper-pagination {
+    position: relative;
+    top:16px!important;
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}

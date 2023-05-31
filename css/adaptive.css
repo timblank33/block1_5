@@ -2,6 +2,9 @@
     .brand__more-mobile--display--none {
         display: flex;
     }
+    .swiper--display {
+        display: none;
+    }
     .brand__title {
         padding: 0 24px;
         height: 56px;

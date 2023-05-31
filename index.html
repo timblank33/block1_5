@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -15,16 +18,18 @@
             <p>Ремонт техники различных брендов</p>
         </div>
         <div class="brand__block">
-            <div class="brand__logo ">
-            
-            </div>
-
-            <div class="brand__more brand__more-mobile--display--none">
-                <div class="brand__more-img">
-                    <img src="img/icon.svg" alt="">
+            <div class="brand__swiper-window ">
+                <div class="brand__logo swiper-wrapper">
                 </div>
-                <p class="brand__more-text">Показать все</p>
+                <div class="brand__more brand__more-mobile--display--none">
+                    <div class="brand__more-img">
+                        <img src="img/icon.svg" alt="">
+                    </div>
+                    <p class="brand__more-text">Показать все</p>
+                </div>
             </div>
+            <div class="brand__block-gradient--display"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     <script src="js/main.js"></script>
