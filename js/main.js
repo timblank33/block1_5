@@ -17,6 +17,7 @@ let brandLogo = document.querySelector('.brand__logo');
 const newBrandLogo = item => {
     let brandLogoBlock = document.createElement('div');
     brandLogoBlock.classList.add('brand__logo-block');
+    brandLogoBlock.classList.add('swiper-slide');
     brandLogo.appendChild(brandLogoBlock);
 
     let brandLogoBlockImg = document.createElement('img');
@@ -51,4 +52,19 @@ brandMore.addEventListener('click', () => {
     }
 });
 
+let brandSwiperWindow = document.querySelector('.brand__swiper-window');
+    
+brandSwiperWindow.classList.add('swiper');
+if(window.innerWidth > 768) {
+    brandSwiperWindow.classList.remove('swiper');
+}
+const swiper = new Swiper('.swiper', {
 
+    direction: 'horizontal',
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable : true
+      },
+  
+});
