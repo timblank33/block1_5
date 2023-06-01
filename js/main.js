@@ -63,7 +63,7 @@ document.addEventListener('resize',(e) => {
 
 brandLogo.style.maxHeight = "160px";
 brandMore.addEventListener("click", () => {
-    if (brandLogo.style.maxHeight === "160px") {
+    if (brandLogo.style.maxHeight == "160px") {
         brandLogo.style.maxHeight = `${ brandLogo.scrollHeight }px`;
         brandMoreImg.style.transform = 'rotateX(180deg)'
         brandMoreText.textContent = 'Скрыть все';
@@ -72,11 +72,6 @@ brandMore.addEventListener("click", () => {
         brandLogo.style.maxHeight = "160px";
         brandMoreText.textContent = 'Показать все';
         brandMoreImg.style.transform = 'rotateX(0deg)';
-    }
-});
-brandLogo.addEventListener("transitionend", () => {
-    if (brandLogo.style.maxHeight !== "160px") {
-        brandLogo.style.maxHeight = `${ brandLogo.scrollHeight }px`;
     }
 });
 
