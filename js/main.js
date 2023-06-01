@@ -62,7 +62,6 @@ brandMore.addEventListener("click", () => {
         brandLogo.style.maxHeight = `${ brandLogo.scrollHeight }px`;
         brandMoreImg.style.transform = 'rotateX(180deg)'
         brandMoreText.textContent = 'Скрыть все';
-        
     } else {
         brandLogo.style.maxHeight = "160px";
         brandMoreText.textContent = 'Показать все';
