@@ -39,11 +39,6 @@ let brandMore = document.querySelector('.brand__more');
 let brandMoreImg = document.querySelector('.brand__more-img');
 let brandMoreText = document.querySelector('.brand__more-text');
 
-document.addEventListener('resize',(e) => {
-    console.log(document.body.clientWidth);
- 
-});
-
 // brandMore.addEventListener('click', () => {
 //     if (brandLogo.style.maxHeight != '336px' && window.innerWidth < 1016){
 //         brandLogo.style.maxHeight = '336px';
