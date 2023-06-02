@@ -1,80 +1,95 @@
 @font-face {
-    font-family: "TT Lakes Bold";
-    src: url("../fonts/TTLakes-Bold.ttf");
+  font-family: "TT Lakes Bold";
+  src: url("../fonts/TTLakes-Bold.ttf");
 }
+
 @font-face {
-    font-family: "TT Lakes Regular";
-    src: url("../fonts/TTLakes-Regular.ttf");
+  font-family: "TT Lakes Regular";
+  src: url("../fonts/TTLakes-Regular.ttf");
 }
+
 @font-face {
-    font-family: "TT Lakes Medium";
-    src: url("../fonts/TTLakes-Medium.ttf");
+  font-family: "TT Lakes Medium";
+  src: url("../fonts/TTLakes-Medium.ttf");
 }
+
 .brand {
-    overflow: hidden;
+  overflow: hidden;
 }
+
 .brand__title {
-    font-family: "TT Lakes Regular";
-    text-transform: uppercase;
-    letter-spacing: -0.2px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    height: 80px;
-    background-color: #fff;
+  font-family: "TT Lakes Regular";
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 80px;
+  background-color: #fff;
 }
+
 .brand__block {
-    position: relative;
-    background-color: #F2F2F2;
-    padding: 16px;
-    padding-right: 0;
-    padding-bottom: 50px;
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 16px;
+  padding-right: 0;
+  padding-bottom: 50px;
 }
+
 .brand__logo {
-    display: flex;
+  display: flex;
 }
+
 .brand__logo-block {
-    background-color: #fff;
-    height: 72px;
-    margin-right: 16px;
-    border-radius: 6px;
-    display: flex;
-    flex: 0 0 240px;
-    align-items: center;
-    justify-content: space-between;
+  background-color: #fff;
+  height: 72px;
+  margin-right: 16px;
+  border-radius: 6px;
+  display: flex;
+  flex: 0 0 240px;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .brand__logo-block-img {
-    margin-left: 16px;
+  margin-left: 16px;
 }
+
 .brand__logo-block-arrow {
-    margin-right: 16px;
+  margin-right: 16px;
 }
+
 .brand__logo-block:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
+
 .brand__more-mobile--display--none {
-    display: none;
+  display: none;
 }
+
 .brand__block-gradient--display {
-    position: absolute;
-    top: 16px;
-    right: 0;
-    width: 24px;
-    height: 72px;
-    background: linear-gradient(to right, transparent 40%, #fff 90%);
-    z-index: 1;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  width: 24px;
+  height: 72px;
+  background: linear-gradient(to right, transparent 40%, #fff 90%);
+  z-index: 1;
 }
+
 .swiper {
-    max-width: 256px;
-    overflow: visible;
-    margin: 0;
+  max-width: 256px;
+  overflow: visible;
+  margin: 0;
 }
+
 .swiper-pagination {
-    position: relative;
-    top:16px!important;
+  position: relative;
+  top: 16px !important;
 }
+
 .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
+  width: 12px;
+  height: 12px;
 }
